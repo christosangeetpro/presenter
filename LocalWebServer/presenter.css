@@ -1,0 +1,105 @@
+@import url("//fonts.googleapis.com/css?family=Pacifico");
+body, html {
+    height: 100%;
+    color: #ffffff;
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    color: #12ff00;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.connection-icon {
+    color: #ffffff;
+    text-align: center;
+    font: 2.5em 'Baloo Da 2', cursive;
+    font-weight: 800;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.app-data h3 {
+    font-size: 3.4em;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center; /* ভেতরের এলিমেন্ট সেন্টারে থাকবে */
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.no-data {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.no-data h2 {
+    font-size: 3em;
+    font-family: SolaimanLipi;
+    font-weight: 800;
+    color: #ffbf00;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.no-data div {
+    font-size: 1.5em;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+    gap: 1px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: SolaimanLipi;
+    padding: 8px 15px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    font-size: 0.7em;
+}
+
+.links a:hover {
+    background-color: #ffffff;
+    color: #2980b9;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    font-size: 13px;
+
+}
