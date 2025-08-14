@@ -1,0 +1,10 @@
+.chord {
+    font-size: 0.7em;
+    vertical-align: super;
+    color: #ff9800;
+    font-weight: bold;
+    margin-right: 2px;
+}
+#present-text {
+    white-space: pre-line;
+}
