@@ -1,0 +1,49 @@
+  /* পুরো স্ক্রিন ঢেকে লোডার */
+    #loader > div {
+    display: flex;
+    flex-direction: column; /* লোডিং বার ও টেক্সটকে column হিসেবে রাখবে */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* টেক্সট সেন্টারে */
+    }
+
+    #loader {
+        display: flex; /* লোডারকে সেন্টারে রাখার জন্য */
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background: rgba(0, 0, 0, 0.5); /* সেমি ট্রান্সপারেন্ট কালো */
+        -webkit-backdrop-filter: blur(6px);
+        backdrop-filter: blur(6px);
+
+        z-index: 99999;
+
+        font-family: 'SolaimanLipi', Arial, sans-serif;
+    }
+
+    /* লোডিং বার */
+    .loader-bar {
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        background: linear-gradient(orange 0 0) 0/0% no-repeat lightblue;
+        animation: l2 2s infinite steps(10);
+        margin-bottom: 10px;
+    }
+
+    /* লোডিং টেক্সট */
+    .loader-text {
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    @keyframes l2 {
+        100% {background-size:110%}
+    }
