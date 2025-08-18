@@ -1,0 +1,142 @@
+     /* ================= Keypad Overlay ================= */
+     .keypad-overlay {
+         display: none; /* hidden by default */
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0,0,0,0.6);
+         justify-content: center;
+         align-items: center;
+         z-index: 2000;
+     }
+
+     /* ================= Keypad Box ================= */
+     .keypad-box {
+         background: #fff;
+         padding: 20px;
+         border-radius: 15px;
+         width: 280px;
+         max-width: 90%;
+         text-align: center;
+         box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+     }
+
+     /* ================= Input Display ================= */
+     .keypad-display {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 15px;
+         background: #d3d3d3;
+         border-radius: 8px;
+         padding: 5px;
+     }
+
+     .keypad-display input {
+         flex: 1;
+         font-size: 24px;
+         padding: 8px;
+         text-align: center;
+         border: 1px solid #ccc;
+         border-radius: 8px;
+         outline: none;
+     }
+
+     /* Backspace button inside display */
+     .keypad-display button {
+         background: none;
+         border: none;
+         font-size: 22px;
+         cursor: pointer;
+         padding: 0 8px;
+         color: #333;
+     }
+
+     /* ================= Number Grid ================= */
+     .keypad-grid {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 10px;
+         margin-bottom: 15px;
+     }
+
+     .keypad-grid button {
+         font-size: 22px;
+         padding: 15px;
+         border: none;
+         border-radius: 10px;
+         cursor: pointer;
+         background: #ffa024;
+         color: #fff;
+         transition: background 0.2s;
+     }
+
+     .keypad-grid button:hover {
+         background: #ffb84d;
+     }
+
+     /* Zero button spans full row */
+     .keypad-grid .zero {
+         grid-column: span 3;
+     }
+
+     /* ================= Bottom Actions ================= */
+     .keypad-actions {
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .keypad-actions button {
+         flex: 1;
+         padding: 10px;
+         font-size: 18px;
+         margin: 0 5px;
+         border-radius: 8px;
+         cursor: pointer;
+         border: none;
+         color: #fff;
+         transition: background 0.2s;
+     }
+
+     .keypad-actions .cancel {
+         background: red;
+     }
+     .keypad-actions .cancel:hover {
+    background: darkred;
+      }
+
+
+     .keypad-actions .cancel:hover {
+         background: #999;
+     }
+
+.keypad-actions .ok {
+    background: green;
+    color: white;
+}
+
+.keypad-actions .ok:hover {
+    background: darkgreen;
+}
+
+     /* ================= Responsive tweaks ================= */
+     @media (max-width: 350px) {
+         .keypad-box {
+             width: 90%;
+             padding: 15px;
+         }
+
+         .keypad-grid button {
+             padding: 12px;
+             font-size: 20px;
+         }
+
+         .keypad-actions button {
+             font-size: 16px;
+             padding: 8px;
+         }
+     }
+
+     
