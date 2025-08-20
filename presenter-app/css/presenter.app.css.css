@@ -383,3 +383,24 @@
             font-size: 16px;
             margin-right: 10px;
         }
+
+        /* =======================
+           প্রেজেন্টারের টেক্সট অ্যানিমেশন
+        ======================= */
+    #total-songs {
+    font-family: 'SolaimanLipi', Arial, sans-serif;
+    font-size: 18px;        
+    font-weight: bold;         
+    color: #ffffff;          
+    padding: 8px 15px;      
+    border-radius: 8px;      
+    display: inline-block;     
+    margin: 10px auto;    /* উপরে নিচে 10px, সেন্টারে রাখবে */
+    text-align: center;    
+    width: fit-content;
+    animation: l1 1s linear infinite alternate;
+   }
+   #total-songs:before {
+   content:""
+   }
+   @keyframes l1 {to{opacity: 0}}
